@@ -1,0 +1,10 @@
+<template bindable="actions">
+  <div class="btn-toolbar">
+    <div class="btn-group">
+      <button class="btn" repeat.for="action of actions" click.delegate="action.execute()" disabled.bind="action.disabled()">
+        ${action.displayName}</button>
+    </div>
+  </div>
+</template>
+
+<!--https://bootsnipp.com/buttons-->

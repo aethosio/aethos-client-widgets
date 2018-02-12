@@ -1,9 +1,10 @@
 import { PLATFORM } from 'aurelia-pal';
 
-export { HelloWorld } from './hello-world';
+export { ActionBar } from './action-bar';
 
 export function configure(config) {
+  console.log('Configuring aethos-client-widgets library');
   config.globalResources([
-    PLATFORM.moduleName('./hello-world')
+    PLATFORM.moduleName('./action-bar')
   ]);
 }
