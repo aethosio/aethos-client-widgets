@@ -1,13 +1,10 @@
 import { bindable } from 'aurelia-framework';
 
-export class ActionBar {
+export class ActionBarCustomElement {
   @bindable actions;
 
   constructor() {
-
+    
   }
 
-  activate(params, routeConfig) {
-    console.log(this.actions);
-  }
 }
